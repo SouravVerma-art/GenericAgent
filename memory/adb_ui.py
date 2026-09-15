@@ -14,7 +14,7 @@ def _dump_u2():
     try:
         import uiautomator2 as u2
         d = u2.connect()
-        xml_str = d.dump_hierarchy()
+        xml_str = d.dump_hierarchy()   
         if xml_str and len(xml_str) > 100: return xml_str
     except Exception as e:
         print(f"[u2 fallback] {e}")
